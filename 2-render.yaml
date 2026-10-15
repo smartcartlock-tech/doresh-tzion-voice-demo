@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: doresh-tzion-voice-demo
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
